@@ -14,6 +14,7 @@
         $result[$rollcount] = $roll;
     }while($rollcount < 4);
     sort($result);
+    array_shift($result);
     echo join(", ", $result);
     echo " Total: " . array_sum($result) . "\n";
 ?>
