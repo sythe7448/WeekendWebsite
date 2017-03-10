@@ -12,6 +12,7 @@ echo "Rolling 3d6 \n";
         $rollcount ++;
         echo $roll . "\n";
         $result[$rollcount] = $roll;
+        sort($result);
     }while($rollcount < 3);
     echo "Total: " . array_sum($result) . "\n";
     ?>
