@@ -10,9 +10,9 @@ echo "Rolling 3d6 \n";
     do {
         $roll = rand (1,6);
         $rollcount ++;
-        echo $roll . "\n";
+        //echo $roll . "\n";
         $result[$rollcount] = $roll;
-        sort($result);
+        echo sort($result);
     }while($rollcount < 3);
     echo "Total: " . array_sum($result) . "\n";
     ?>
